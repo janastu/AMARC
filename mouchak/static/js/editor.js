@@ -864,7 +864,9 @@
         editor.getSession().setTabSize(2);
         editor.getSession().setUseSoftTabs(true);
         editor.getSession().setUseWrapMode(true);
-        $('#code-edit').css('fontSize', '13px');
+        editor.setShowPrintMargin(false);
+        $('#plugin-edit').css('fontSize', '15px');
+        $('#code-edit').css('fontSize', '15px');
         this._editor = editor;
       },
       save: function(id) {
